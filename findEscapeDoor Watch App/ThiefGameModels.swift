@@ -140,13 +140,13 @@ class ThiefGameModel: ObservableObject {
     func movePlayerTo(position: GridPosition) {
         guard gameState == .playing else { return }
         
-        // Check if position is adjacent (one move away)
+        // Check if position is adjacent (one move away in any of 8 directions)
         let currentPos = player.position
         let rowDiff = abs(position.row - currentPos.row)
         let colDiff = abs(position.col - currentPos.col)
         
-        // Must be exactly one move away (adjacent)
-        if (rowDiff == 1 && colDiff == 0) || (rowDiff == 0 && colDiff == 1) {
+        // Must be exactly one move away (adjacent in 8 directions: up, down, left, right, and 4 diagonals)
+        if (rowDiff <= 1 && colDiff <= 1) && !(rowDiff == 0 && colDiff == 0) {
             if isValidPosition(position) {
                 player.move(to: position)
                 
@@ -199,17 +199,26 @@ class ThiefGameModel: ObservableObject {
         let thiefPos = thief.position
         let playerPos = player.position
         
-        // Calculate distance to player
-        let playerDistance = abs(playerPos.row - thiefPos.row) + abs(playerPos.col - thiefPos.col)
+        // Calculate distance to player (using Chebyshev distance for 8-directional movement)
+        let playerDistance = max(abs(playerPos.row - thiefPos.row), abs(playerPos.col - thiefPos.col))
         
         var bestMove: GridPosition?
         var bestScore: Int = Int.min
         
-        // Try all 4 directions
-        let directions: [MoveDirection] = [.up, .down, .left, .right]
+        // Try all 8 directions (4 cardinal + 4 diagonal)
+        let allDirections: [(row: Int, col: Int)] = [
+            (-1, 0),  // up
+            (1, 0),   // down
+            (0, -1),  // left
+            (0, 1),   // right
+            (-1, -1), // up-left (diagonal)
+            (-1, 1),  // up-right (diagonal)
+            (1, -1),  // down-left (diagonal)
+            (1, 1)    // down-right (diagonal)
+        ]
         
-        for direction in directions {
-            let newPos = getNewPosition(from: thiefPos, direction: direction)
+        for direction in allDirections {
+            let newPos = GridPosition(thiefPos.row + direction.row, thiefPos.col + direction.col)
             
             if !isValidPosition(newPos) {
                 continue
@@ -220,18 +229,13 @@ class ThiefGameModel: ObservableObject {
                 continue
             }
             
-            // Calculate new distance to player
-            let newPlayerDistance = abs(playerPos.row - newPos.row) + abs(playerPos.col - newPos.col)
+            // Calculate new distance to player (Chebyshev distance)
+            let newPlayerDistance = max(abs(playerPos.row - newPos.row), abs(playerPos.col - newPos.col))
             let oldPlayerDistance = playerDistance
             
-            // Calculate distance to exit
-            let newDeltaRow = exitPos.row - newPos.row
-            let newDeltaCol = exitPos.col - newPos.col
-            let newDistanceToExit = abs(newDeltaRow) + abs(newDeltaCol)
-            
-            let oldDeltaRow = exitPos.row - thiefPos.row
-            let oldDeltaCol = exitPos.col - thiefPos.col
-            let oldDistanceToExit = abs(oldDeltaRow) + abs(oldDeltaCol)
+            // Calculate distance to exit (Chebyshev distance)
+            let newDistanceToExit = max(abs(exitPos.row - newPos.row), abs(exitPos.col - newPos.col))
+            let oldDistanceToExit = max(abs(exitPos.row - thiefPos.row), abs(exitPos.col - thiefPos.col))
             
             var score: Int = 0
             

@@ -120,7 +120,8 @@ struct ThiefCellView: View {
         let currentPos = gameModel.player.position
         let rowDiff = abs(position.row - currentPos.row)
         let colDiff = abs(position.col - currentPos.col)
-        return (rowDiff == 1 && colDiff == 0) || (rowDiff == 0 && colDiff == 1)
+        // Allow 8 directions: up, down, left, right, and 4 diagonals
+        return (rowDiff <= 1 && colDiff <= 1) && !(rowDiff == 0 && colDiff == 0)
     }
     
     var body: some View {
