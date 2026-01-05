@@ -194,14 +194,10 @@ class ThiefGameModel: ObservableObject {
     }
     
     private func moveThief() {
-        // Thief AI: Move toward exit, but avoid player if too close
+        // Thief AI: Escape from player first, then move toward exit
         let exitPos = exitPosition
         let thiefPos = thief.position
         let playerPos = player.position
-        
-        // Calculate distance to exit
-        let deltaRow = exitPos.row - thiefPos.row
-        let deltaCol = exitPos.col - thiefPos.col
         
         // Calculate distance to player
         let playerDistance = abs(playerPos.row - thiefPos.row) + abs(playerPos.col - thiefPos.col)
@@ -224,20 +220,35 @@ class ThiefGameModel: ObservableObject {
                 continue
             }
             
-            // Calculate score: prefer moving toward exit, but avoid player if close
+            // Calculate new distance to player
+            let newPlayerDistance = abs(playerPos.row - newPos.row) + abs(playerPos.col - newPos.col)
+            let oldPlayerDistance = playerDistance
+            
+            // Calculate distance to exit
             let newDeltaRow = exitPos.row - newPos.row
             let newDeltaCol = exitPos.col - newPos.col
-            let distanceToExit = abs(newDeltaRow) + abs(newDeltaCol)
-            let oldDistanceToExit = abs(deltaRow) + abs(deltaCol)
+            let newDistanceToExit = abs(newDeltaRow) + abs(newDeltaCol)
             
-            var score = oldDistanceToExit - distanceToExit // Positive if getting closer
+            let oldDeltaRow = exitPos.row - thiefPos.row
+            let oldDeltaCol = exitPos.col - thiefPos.col
+            let oldDistanceToExit = abs(oldDeltaRow) + abs(oldDeltaCol)
             
-            // If player is close (2 or less), prioritize avoiding player
-            if playerDistance <= 2 {
-                let newPlayerDistance = abs(playerPos.row - newPos.row) + abs(playerPos.col - newPos.col)
-                let oldPlayerDistance = playerDistance
-                score += (oldPlayerDistance - newPlayerDistance) * 2 // Avoid player more
+            var score: Int = 0
+            
+            // Priority 1: Escape from player (much higher priority)
+            if playerDistance <= 3 {
+                // If player is close, prioritize getting away
+                let distanceGained = newPlayerDistance - oldPlayerDistance
+                score = distanceGained * 100 // High weight for escaping
+            } else {
+                // If player is far, move toward exit
+                let exitProgress = oldDistanceToExit - newDistanceToExit
+                score = exitProgress * 10
             }
+            
+            // Small bonus for moving toward exit even when escaping
+            let exitProgress = oldDistanceToExit - newDistanceToExit
+            score += exitProgress
             
             if score > bestScore {
                 bestScore = score
