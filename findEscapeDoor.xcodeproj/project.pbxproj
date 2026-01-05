@@ -1,0 +1,671 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10E325862EAA0740008FCF40 /* findEscapeDoor Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 10E325852EAA0740008FCF40 /* findEscapeDoor Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10E325872EAA0740008FCF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10E325792EAA0740008FCF40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E325842EAA0740008FCF40;
+			remoteInfo = "findEscapeDoor Watch App";
+		};
+		10E325952EAA0742008FCF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10E325792EAA0740008FCF40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E325842EAA0740008FCF40;
+			remoteInfo = "findEscapeDoor Watch App";
+		};
+		10E3259F2EAA0742008FCF40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 10E325792EAA0740008FCF40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 10E325842EAA0740008FCF40;
+			remoteInfo = "findEscapeDoor Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10E325AB2EAA0742008FCF40 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				10E325862EAA0740008FCF40 /* findEscapeDoor Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		10E3257F2EAA0740008FCF40 /* findEscapeDoor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = findEscapeDoor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E325852EAA0740008FCF40 /* findEscapeDoor Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "findEscapeDoor Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E325942EAA0742008FCF40 /* findEscapeDoor Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "findEscapeDoor Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		10E3259E2EAA0742008FCF40 /* findEscapeDoor Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "findEscapeDoor Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		10E325892EAA0740008FCF40 /* findEscapeDoor Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "findEscapeDoor Watch App";
+			sourceTree = "<group>";
+		};
+		10E325972EAA0742008FCF40 /* findEscapeDoor Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "findEscapeDoor Watch AppTests";
+			sourceTree = "<group>";
+		};
+		10E325A12EAA0742008FCF40 /* findEscapeDoor Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "findEscapeDoor Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10E325822EAA0740008FCF40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E325912EAA0742008FCF40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E3259B2EAA0742008FCF40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10E325782EAA0740008FCF40 = {
+			isa = PBXGroup;
+			children = (
+				10E325892EAA0740008FCF40 /* findEscapeDoor Watch App */,
+				10E325972EAA0742008FCF40 /* findEscapeDoor Watch AppTests */,
+				10E325A12EAA0742008FCF40 /* findEscapeDoor Watch AppUITests */,
+				10E325802EAA0740008FCF40 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10E325802EAA0740008FCF40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10E3257F2EAA0740008FCF40 /* findEscapeDoor.app */,
+				10E325852EAA0740008FCF40 /* findEscapeDoor Watch App.app */,
+				10E325942EAA0742008FCF40 /* findEscapeDoor Watch AppTests.xctest */,
+				10E3259E2EAA0742008FCF40 /* findEscapeDoor Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10E3257E2EAA0740008FCF40 /* findEscapeDoor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E325AC2EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor" */;
+			buildPhases = (
+				10E3257D2EAA0740008FCF40 /* Resources */,
+				10E325AB2EAA0742008FCF40 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10E325882EAA0740008FCF40 /* PBXTargetDependency */,
+			);
+			name = findEscapeDoor;
+			packageProductDependencies = (
+			);
+			productName = findEscapeDoor;
+			productReference = 10E3257F2EAA0740008FCF40 /* findEscapeDoor.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		10E325842EAA0740008FCF40 /* findEscapeDoor Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E325A82EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor Watch App" */;
+			buildPhases = (
+				10E325812EAA0740008FCF40 /* Sources */,
+				10E325822EAA0740008FCF40 /* Frameworks */,
+				10E325832EAA0740008FCF40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				10E325892EAA0740008FCF40 /* findEscapeDoor Watch App */,
+			);
+			name = "findEscapeDoor Watch App";
+			packageProductDependencies = (
+			);
+			productName = "findEscapeDoor Watch App";
+			productReference = 10E325852EAA0740008FCF40 /* findEscapeDoor Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		10E325932EAA0742008FCF40 /* findEscapeDoor Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E325AF2EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor Watch AppTests" */;
+			buildPhases = (
+				10E325902EAA0742008FCF40 /* Sources */,
+				10E325912EAA0742008FCF40 /* Frameworks */,
+				10E325922EAA0742008FCF40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10E325962EAA0742008FCF40 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				10E325972EAA0742008FCF40 /* findEscapeDoor Watch AppTests */,
+			);
+			name = "findEscapeDoor Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "findEscapeDoor Watch AppTests";
+			productReference = 10E325942EAA0742008FCF40 /* findEscapeDoor Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		10E3259D2EAA0742008FCF40 /* findEscapeDoor Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10E325B22EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor Watch AppUITests" */;
+			buildPhases = (
+				10E3259A2EAA0742008FCF40 /* Sources */,
+				10E3259B2EAA0742008FCF40 /* Frameworks */,
+				10E3259C2EAA0742008FCF40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				10E325A02EAA0742008FCF40 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				10E325A12EAA0742008FCF40 /* findEscapeDoor Watch AppUITests */,
+			);
+			name = "findEscapeDoor Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "findEscapeDoor Watch AppUITests";
+			productReference = 10E3259E2EAA0742008FCF40 /* findEscapeDoor Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10E325792EAA0740008FCF40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					10E3257E2EAA0740008FCF40 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					10E325842EAA0740008FCF40 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					10E325932EAA0742008FCF40 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 10E325842EAA0740008FCF40;
+					};
+					10E3259D2EAA0742008FCF40 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 10E325842EAA0740008FCF40;
+					};
+				};
+			};
+			buildConfigurationList = 10E3257C2EAA0740008FCF40 /* Build configuration list for PBXProject "findEscapeDoor" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10E325782EAA0740008FCF40;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 10E325802EAA0740008FCF40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10E3257E2EAA0740008FCF40 /* findEscapeDoor */,
+				10E325842EAA0740008FCF40 /* findEscapeDoor Watch App */,
+				10E325932EAA0742008FCF40 /* findEscapeDoor Watch AppTests */,
+				10E3259D2EAA0742008FCF40 /* findEscapeDoor Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10E3257D2EAA0740008FCF40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E325832EAA0740008FCF40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E325922EAA0742008FCF40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E3259C2EAA0742008FCF40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10E325812EAA0740008FCF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E325902EAA0742008FCF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		10E3259A2EAA0742008FCF40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		10E325882EAA0740008FCF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E325842EAA0740008FCF40 /* findEscapeDoor Watch App */;
+			targetProxy = 10E325872EAA0740008FCF40 /* PBXContainerItemProxy */;
+		};
+		10E325962EAA0742008FCF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E325842EAA0740008FCF40 /* findEscapeDoor Watch App */;
+			targetProxy = 10E325952EAA0742008FCF40 /* PBXContainerItemProxy */;
+		};
+		10E325A02EAA0742008FCF40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 10E325842EAA0740008FCF40 /* findEscapeDoor Watch App */;
+			targetProxy = 10E3259F2EAA0742008FCF40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10E325A62EAA0742008FCF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		10E325A72EAA0742008FCF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		10E325A92EAA0742008FCF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = findEscapeDoor;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engineernest.findEscapeDoor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		10E325AA2EAA0742008FCF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = findEscapeDoor;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engineernest.findEscapeDoor.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		10E325AD2EAA0742008FCF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				INFOPLIST_KEY_CFBundleDisplayName = findEscapeDoor;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engineernest.findEscapeDoor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		10E325AE2EAA0742008FCF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				INFOPLIST_KEY_CFBundleDisplayName = findEscapeDoor;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.engineernest.findEscapeDoor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10E325B02EAA0742008FCF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.engineernest.findEscapeDoor-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findEscapeDoor Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/findEscapeDoor Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		10E325B12EAA0742008FCF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.engineernest.findEscapeDoor-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/findEscapeDoor Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/findEscapeDoor Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+		10E325B32EAA0742008FCF40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.engineernest.findEscapeDoor-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "findEscapeDoor Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		10E325B42EAA0742008FCF40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XQZ4S6PXLM;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.engineernest.findEscapeDoor-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "findEscapeDoor Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10E3257C2EAA0740008FCF40 /* Build configuration list for PBXProject "findEscapeDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10E325A62EAA0742008FCF40 /* Debug */,
+				10E325A72EAA0742008FCF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10E325A82EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10E325A92EAA0742008FCF40 /* Debug */,
+				10E325AA2EAA0742008FCF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10E325AC2EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10E325AD2EAA0742008FCF40 /* Debug */,
+				10E325AE2EAA0742008FCF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10E325AF2EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10E325B02EAA0742008FCF40 /* Debug */,
+				10E325B12EAA0742008FCF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10E325B22EAA0742008FCF40 /* Build configuration list for PBXNativeTarget "findEscapeDoor Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10E325B32EAA0742008FCF40 /* Debug */,
+				10E325B42EAA0742008FCF40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10E325792EAA0740008FCF40 /* Project object */;
+}
