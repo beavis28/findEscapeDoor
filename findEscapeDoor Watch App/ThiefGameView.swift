@@ -36,29 +36,29 @@ struct ThiefMenuView: View {
                     .font(.title2)
                     .foregroundColor(.blue)
                 
-                Text("泥棒を追え！")
+                Text("Catch the Thief!")
                     .font(.headline)
                     .fontWeight(.bold)
                 
-                Text("見えない泥棒を捕まえろ")
+                Text("Catch the invisible thief")
                     .font(.caption)
                     .foregroundColor(.secondary)
                 
-                Button("ゲーム開始") {
+                Button("Start Game") {
                     gameModel.startGame()
                 }
                 .buttonStyle(.borderedProminent)
                 .controlSize(.small)
                 
                 VStack(spacing: 5) {
-                    Text("ルール:")
+                    Text("Rules:")
                         .font(.caption)
                         .fontWeight(.semibold)
                     
-                    Text("• 矢印ボタンで移動")
-                    Text("• 3ターン毎に泥棒が見える")
-                    Text("• 泥棒を捕まえて勝利")
-                    Text("• 出口に逃げられたら敗北")
+                    Text("• Tap cells to move")
+                    Text("• Thief becomes visible every 3 turns")
+                    Text("• Catch the thief to win")
+                    Text("• Lose if thief escapes to exit")
                 }
                 .font(.caption2)
                 .foregroundColor(.secondary)
@@ -196,25 +196,25 @@ struct ThiefGameOverView: View {
                 .font(.title2)
                 .foregroundColor(won ? .green : .red)
             
-            Text(won ? "勝利！" : "敗北")
+            Text(won ? "Victory!" : "Defeat")
                 .font(.headline)
                 .fontWeight(.bold)
             
-            Text(won ? "泥棒を捕まえた！" : "泥棒が逃げた...")
+            Text(won ? "You caught the thief!" : "The thief escaped...")
                 .font(.caption)
                 .foregroundColor(.secondary)
             
-            Text("ターン: \(gameModel.currentTurn)")
+            Text("Turn: \(gameModel.currentTurn)")
                 .font(.caption)
                 .foregroundColor(.secondary)
             
-            Button("もう一度") {
+            Button("Play Again") {
                 gameModel.startGame()
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.small)
             
-            Button("メニュー") {
+            Button("Menu") {
                 gameModel.gameState = .menu
             }
             .buttonStyle(.bordered)
