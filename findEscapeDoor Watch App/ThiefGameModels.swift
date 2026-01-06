@@ -68,6 +68,7 @@ class ThiefGameModel: ObservableObject {
     @Published var player: ThiefPlayer
     @Published var thief: Thief
     @Published var exitPosition: GridPosition
+    @Published var blockPositions: [GridPosition] = []
     @Published var currentTurn: Int = 1
     @Published var visibilityTurn: Int = 0 // Countdown to next visibility
     
@@ -104,12 +105,37 @@ class ThiefGameModel: ObservableObject {
         ]
         exitPosition = exitPositions.randomElement() ?? GridPosition(0, 0)
         
-        // Place thief away from player and exit
+        // Place 2 blocks randomly (not at player, exit, or corners)
+        var availableBlockPositions: [GridPosition] = []
+        for row in 0..<gridSize {
+            for col in 0..<gridSize {
+                let pos = GridPosition(row, col)
+                // Don't place blocks at player position, exit, or corners
+                if pos != player.position && pos != exitPosition {
+                    let isCorner = (row == 0 || row == gridSize-1) && (col == 0 || col == gridSize-1)
+                    if !isCorner {
+                        availableBlockPositions.append(pos)
+                    }
+                }
+            }
+        }
+        
+        // Select 2 random block positions
+        blockPositions = []
+        var remainingPositions = availableBlockPositions
+        for _ in 0..<min(2, remainingPositions.count) {
+            if let randomPos = remainingPositions.randomElement() {
+                blockPositions.append(randomPos)
+                remainingPositions.removeAll { $0 == randomPos }
+            }
+        }
+        
+        // Place thief away from player, exit, and blocks
         var thiefPositions: [GridPosition] = []
         for row in 0..<gridSize {
             for col in 0..<gridSize {
                 let pos = GridPosition(row, col)
-                if pos != player.position && pos != exitPosition {
+                if pos != player.position && pos != exitPosition && !blockPositions.contains(pos) {
                     thiefPositions.append(pos)
                 }
             }
@@ -147,7 +173,7 @@ class ThiefGameModel: ObservableObject {
         
         // Must be exactly one move away (adjacent in 8 directions: up, down, left, right, and 4 diagonals)
         if (rowDiff <= 1 && colDiff <= 1) && !(rowDiff == 0 && colDiff == 0) {
-            if isValidPosition(position) {
+            if isValidPosition(position) && !isBlocked(position) {
                 player.move(to: position)
                 
                 // Check if player caught thief
@@ -224,8 +250,8 @@ class ThiefGameModel: ObservableObject {
                 continue
             }
             
-            // Don't move to player position
-            if newPos == playerPos {
+            // Don't move to player position or blocked positions
+            if newPos == playerPos || isBlocked(newPos) {
                 continue
             }
             
@@ -281,6 +307,10 @@ class ThiefGameModel: ObservableObject {
     private func isValidPosition(_ position: GridPosition) -> Bool {
         return position.row >= 0 && position.row < gridSize &&
                position.col >= 0 && position.col < gridSize
+    }
+    
+    func isBlocked(_ position: GridPosition) -> Bool {
+        return blockPositions.contains(position)
     }
 }
 

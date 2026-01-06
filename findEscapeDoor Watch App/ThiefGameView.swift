@@ -160,18 +160,26 @@ struct ThiefCellView: View {
                 Image(systemName: "door.left.hand.open")
                     .font(.system(size: size * 0.4))
                     .foregroundColor(.green)
+            } else if gameModel.isBlocked(position) {
+                // Block - show as light gray square
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(Color(white: 0.85))
+                    .frame(width: size * 0.8, height: size * 0.8)
             }
         }
         .contentShape(Rectangle())
         .onTapGesture {
-            // Only allow tapping adjacent cells
-            if isAdjacent && gameModel.gameState == .playing {
+            // Only allow tapping adjacent cells (not blocks)
+            if isAdjacent && gameModel.gameState == .playing && !gameModel.isBlocked(position) {
                 gameModel.movePlayerTo(position: position)
             }
         }
     }
     
     private var cellColor: Color {
+        if gameModel.isBlocked(position) {
+            return Color(white: 0.85)
+        }
         if position == gameModel.exitPosition {
             return Color.green.opacity(0.2)
         }
@@ -179,6 +187,9 @@ struct ThiefCellView: View {
     }
     
     private var cellBorderColor: Color {
+        if gameModel.isBlocked(position) {
+            return Color.gray.opacity(0.5)
+        }
         if position == gameModel.exitPosition {
             return Color.green
         }
